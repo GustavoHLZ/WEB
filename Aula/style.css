@@ -1,0 +1,38 @@
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    /*align-items: flex-start; alinhha itens*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*justify-content: center;  deixa ao centro*/
+    border: 1px solid black; /*para mostrar o tamanho do container*/
+    align-content: stretch;/* espaço entre linhas */
+    /*flex-direction: column; organiza uma coluna*/
+    /*flex-wrap: wrap;para quebrar linha*/
+    /*flex-wrap:wrap-reverse; quebra a linha do ultimo */
+    /*pergunta de prova como deixar um item de três formas diferentes no centro da tela*/
+    /*justify-content: space-evenly;  deixa espaço entre o container e os itens */
+   /*justify-content: end;  deixa no final da tela */
+  
+}
+
+.box{
+ border: 1px solid black;
+ flex-shrink: 0;
+ min-width: 30px;
+}
+
+.box:hover{
+    flex-grow: 1;
+    min-width: 30px;
+    background-color: blueviolet;
+    transition: 2s;
+}
+
+#c1-box2{
+    align-self: flex-start;
+   align-items: baseline;
+
+}
