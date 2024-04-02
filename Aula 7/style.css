@@ -1,0 +1,50 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.box,.container {
+    border: 1px solid black;
+}
+.container{ /* definimos a estrutura do grid */
+    display: grid;
+    /*grid-template-columns: repeat(5,20%);*/
+    /* grid-template-rows: 100px 100px 300px;*/
+    /*grid-template-rows: repeat(5,100px); */
+    grid-template-areas:
+    "header header header"
+    "menu main aside"
+    "footer footer footer"
+    ;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-rows: repeat(3,100px);
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+}
+#box-1{
+    background-color: blue;
+    grid-area: header;
+}
+
+#box-2{
+    background-color: pink;
+    grid-area: menu;
+}
+#box-3{
+    background-color: aqua;
+    grid-area: main;
+    
+}
+#box-4 {
+    background-color: coral;
+    grid-area: aside;
+}
+#box-5{
+    background-color: beige;
+    grid-area: footer;
+}
+
+
