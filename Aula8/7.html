@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+
+        <h1>Insira dois números:</h1>
+        <div>
+            <label for="a">Número 1:</label>
+            <input type="number" name id="a"></div><br>
+        <div>
+            <label for="b">Número 2:</label>
+            <input type="number" name id="b">
+        </div>
+        <br>
+        <button id="bnt">somar</button>
+        <!--<button id="bnt" onclick="load()">somar</button>-->
+
+        <p id="soma"></p>
+
+        <script>
+        let bnt= document.querySelector("#bnt");
+function soma (a, b){
+    if(typeof(a)=="number" && typeof(b)=="number"){
+return a+b;
+}
+}
+
+
+let aInput = document.querySelector("#a");
+let bInput = document.querySelector("#b");
+let resultado= document.querySelector("#soma");
+bnt.addEventListener('click', load);
+
+function load(){
+let a=Number(aInput.value);
+let b=Number(bInput.value);
+let result=soma(a,b);
+console.log(result);
+alert(result);
+resultado.innerHTML=result;
+}
+
+console.log("A soma foi: "+result)
+doucment.write("A soma foi: "+result)
+alert("A soma foi: "+result)
+
+    </script>
+    </body>
+</html>
